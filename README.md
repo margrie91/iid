@@ -2,39 +2,67 @@
 interface and interaction design course
 
 uses bootstrap v3.3.6
+
 <pre>
-|   contact.html                  
-|   README.md                                   this file
+|   contact.html
+|   README.md                                           this file
 |   save.html
-|   template.html                               template for your html files                         
+|   template.html                                       template for your html files  
 |
-+---css
-|       bootstrap-theme.css
-|       bootstrap-theme.css.map
-|       bootstrap-theme.min.css
-|       bootstrap-theme.min.css.map
-|       bootstrap.css
-|       bootstrap.css.map
-|       bootstrap.min.css
-|       bootstrap.min.css.map
-|       main.css                                manipulate style here (do not touch bootstrap styles)
++---bootstrap                                           do not touch bootstrap files
+|   +---css
+|   |       bootstrap-theme.css
+|   |       bootstrap-theme.css.map
+|   |       bootstrap-theme.min.css
+|   |       bootstrap-theme.min.css.map
+|   |       bootstrap.css
+|   |       bootstrap.css.map
+|   |       bootstrap.min.css
+|   |       bootstrap.min.css.map
+|   |
+|   +---fonts
+|   |       glyphicons-halflings-regular.eot
+|   |       glyphicons-halflings-regular.svg
+|   |       glyphicons-halflings-regular.ttf
+|   |       glyphicons-halflings-regular.woff
+|   |       glyphicons-halflings-regular.woff2
+|   |
+|   \---js
+|           bootstrap.js
+|           bootstrap.min.js
+|           npm.js
 |
-+---doc                                         documentation
-|       storyboard_0.1.jpg                      as created on 09.12.2015
++---css                                               manipulate styles here (do not touch bootstrap styles)
+|       blocks.css
+|       custom.css
+|       font-awesome.min.css
+|       plugins.css
+|       style-library-1.css
 |
-+---fonts 
-|       glyphicons-halflings-regular.eot
-|       glyphicons-halflings-regular.svg
-|       glyphicons-halflings-regular.ttf
-|       glyphicons-halflings-regular.woff
-|       glyphicons-halflings-regular.woff2
++---doc                                               documentation
+|       storyboard_0.1.jpg                            as created on 09.12.2015
+|
++---fonts
+|       fontawesome-webfont.eot
+|       fontawesome-webfont.svg
+|       fontawesome-webfont.ttf
+|       fontawesome-webfont.woff
+|       fontawesome-webfont.woff2
+|       FontAwesome.otf
 |
 +---images
-|       logo.jpg
+|   |   new-messages-red.png
+|   |
+|   \---brand
+|           fundbox-logo-nostrap.png
+|           fundbox-logo.jpg
 |
-\---js 
+\---js
         bootstrap.js
         bootstrap.min.js
-        npm.js
-</pre>
-
+        bskit-scripts.js
+        contact-form.php
+        html5shiv.js
+        jquery-1.11.1.min.js
+        plugins.js
+        respond.min.js
