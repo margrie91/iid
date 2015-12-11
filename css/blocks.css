@@ -144,9 +144,10 @@ Version: 1.0
 
 #header-1 .brand-img
 {
-    max-width: 150px;
-    padding: 20px 0;
+    max-width: 200px;
+    padding: 5px 0;
 }
+
 
 .headroom
 {
@@ -311,7 +312,6 @@ Version: 1.0
 	
 	
 }
-
 
 /*	FOOTER 1-3
 /*----------------------------------------------------*/

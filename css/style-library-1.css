@@ -1,3 +1,5 @@
+
+
 /*
 Template Name: Bootstrap Starter Kit - Style Library 1
 Description: Business Startup & Prototyping HTML Framework
@@ -944,18 +946,19 @@ em
 
 a
 {
-    color: #1abc9c;
+    color: #70A758;
 }
 
 a:hover
 {
-    color: #16a085;
+    color: #C0392B;
     text-decoration: none;
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 
 /* LISTS */
 
@@ -1102,13 +1105,12 @@ p .btn
 .btn.btn-primary
 {
     background: #70A758;
-    box-shadow: 0 2px #1E9382;
+    box-shadow: 0 2px #1ABC9C;
 }
-
 
 .btn.btn-primary:hover
 {
-    background: #16a085;
+    background: #57967D;
 }
 
 /* Button WARNING */
@@ -1370,7 +1372,7 @@ fieldset
 {
     border: 2px solid #ecf0f1;
     border-radius: 6px;
-    padding: 30px 50px;
+    padding: 25px 50px 10px 50px;
 }
 
 fieldset legend
@@ -1942,7 +1944,7 @@ fieldset[disabled] .form-control
 .content-block
 {
     width: 100%;
-    padding: 60px 0 60px 0;
+    padding: 55px 0 55px 0;
     z-index: 100;
     position: relative;
     background-color: #ffffff;
