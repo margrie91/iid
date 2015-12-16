@@ -39,11 +39,11 @@
                     <!-- Navigation -->                     
                     <div class="collapse navbar-collapse"> 
                         <ul class="nav navbar-nav navbar-right"> 
-                            <li class="active nav-item tamarind-hover" pg-id="4981"> 
-                                <a href="#" 982"">Verloren</a> 
+                            <li class="nav-item"> 
+                                <a href="list-view-lost.html">Verloren</a> 
                             </li>                             
-                            <li class="nav-item data-pg-id=" 983""> 
-                                <a href="#">Gefunden</a> 
+                            <li class="active nav-item"> 
+                                <a href="list-view-find.html">Gefunden</a> 
                             </li>                             
                         </ul>                         
                         <!--//nav-->                         
@@ -56,109 +56,128 @@
         </header>         
         <div class="content-block pricing-table-2">
             <div class="container">
+                <p>Beschreibe die Umstände Deines Fundes und überprüfe, ob der/die BesitzerIn sich schon gemeldet hat:</p>
                 <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
-                <div class="col-md-3">
-                        <input placeholder="Ort" id="places-list" list="places" class="form-control"/>
+                    <div class="col-md-3">
+                        <input placeholder="Ort" id="places-list" list="places" class="form-control">
                         <datalist id="places">
                             <option value="Annaberg">
+</option>
                             <option value="Bludenz">
+</option>
                             <option value="Mattersburg">
+</option>
                             <option value="München">
+</option>
                             <option value="Wien">
+</option>
                         </datalist>
                     </div>
                     <div class="col-md-3">
-                        <input placeholder="Veranstaltung" id="events-list" list="events" class="form-control"/>
+                        <input placeholder="Veranstaltung" id="events-list" list="events" class="form-control">
                         <datalist id="events">
                             <option value="American Christmas Show">
+</option>
                             <option value="Österr. ‑ Ungar. Haydn Philharmonie">
+</option>
                             <option value="Phil Phoenix">
+</option>
                             <option value="Reaggea Konzert">
+</option>
                             <option value="Zillertaler Weihnacht">
+</option>
                         </datalist>
                     </div>
-                <div class="col-md-3">
-                    <input placeholder="Kategorie" id="category-list" list="categories" class="form-control"/>
-                    <datalist id="categories">
-                        <option value="Geldbörse">
-                        <option value="Handy & Zubehör">
-                        <option value="Bekleidung">
-                        <option value="Die Große Liebe">
-                    </datalist>
-                </div>
-                <div class="col-md-3">
-                    <input type="date" id="geburtstag" class="form-control" />
-                </div>
-                <div class="col-md-4">
-                    <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Suchen</button>
-                </div>
+                    <div class="col-md-3">
+                        <input placeholder="Kategorie" id="category-list" list="categories" class="form-control">
+                        <datalist id="categories">
+                            <option value="Geldbörse">
+</option>
+                            <option value="Handy &amp; Zubehör">
+</option>
+                            <option value="Bekleidung">
+</option>
+                            <option value="Die Große Liebe">
+</option>
+                        </datalist>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" id="geburtstag" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Besitzer/IN SUCHEN</button>
+                    </div>
                 </form>
             </div>
             <!-- /.container -->
             <div id="search-container" class="container" style="visibility: hidden">
+                <p>Einen der folgenden Gegestände (sortiert nach Relevanz) könntest Du gefunden haben:</p>
                 <table class="table table-striped table-hover">
                     <thead>
-                    <tr>
-                        <th>Ort</th>
-                        <th>Veranstaltung</th>
-                        <th>Kategorie</th>
-                        <th>Beschreibung</th>
-                        <th>Datum</th>
-                        <th></th>
-                    </tr>
+                        <tr>
+                            <th>Ort</th>
+                            <th>Veranstaltung</th>
+                            <th>Kategorie</th>
+                            <th>Beschreibung</th>
+                            <th>Datum</th>
+                            <th></th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>Mattersburg</td>
-                        <td>American Christmas Show</td>
-                        <td>Geldbörse</td>
-                        <td>Ledergeldbörse Fossil</td>
-                        <td>16.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-success btn-block">Gefunden</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>Mattersburg</td>
-                        <td>Zillertaler Weihnacht</td>
-                        <td>Geldbörse</td>
-                        <td>Marke:Woodland</td>
-                        <td>13.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-success btn-block">Gefunden</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>Mattersburg</td>
-                        <td>Phil Phoenix</td>
-                        <td>Geldbörse</td>
-                        <td>Marke:Woodland</td>
-                        <td>13.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-success btn-block">Gefunden</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>Mattersburg</td>
-                        <td>Österr. ‑ Ungar. Haydn Philharmonie</td>
-                        <td>Geldbörse</td>
-                        <td></td>
-                        <td>13.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-success btn-block">Gefunden</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>Mattersburg</td>
-                        <td>Österr. ‑ Ungar. Haydn Philharmonie</td>
-                        <td>Geldbörse</td>
-                        <td>Ledergeldbörse von Fossil</td>
-                        <td>13.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-success btn-block">Gefunden</button></td>
-
-                    </tr>
+                        <tr>
+                            <td>Mattersburg</td>
+                            <td>American Christmas Show</td>
+                            <td>Geldbörse</td>
+                            <td>Ledergeldbörse Fossil</td>
+                            <td>16.12.2016</td>
+                            <td>
+                                <a href="contact-find.html"><button type="button" class="btn-sm btn-success btn-block">Hab's!</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mattersburg</td>
+                            <td>Zillertaler Weihnacht</td>
+                            <td>Geldbörse</td>
+                            <td>Marke:Woodland</td>
+                            <td>13.12.2016</td>
+                            <td>
+                                <a href="contact-find.html"><button type="button" class="btn-sm btn-success btn-block">Hab's!</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mattersburg</td>
+                            <td>Phil Phoenix</td>
+                            <td>Geldbörse</td>
+                            <td>Marke:Woodland</td>
+                            <td>13.12.2016</td>
+                            <td>
+                                <a href="contact-find.html"><button type="button" class="btn-sm btn-success btn-block">Hab's!</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mattersburg</td>
+                            <td>Österr. ‑ Ungar. Haydn Philharmonie</td>
+                            <td>Geldbörse</td>
+                            <td></td>
+                            <td>13.12.2016</td>
+                            <td>
+                                <a href="contact-find.html"><button type="button" class="btn-sm btn-success btn-block">Hab's!</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mattersburg</td>
+                            <td>Österr. ‑ Ungar. Haydn Philharmonie</td>
+                            <td>Geldbörse</td>
+                            <td>Ledergeldbörse von Fossil</td>
+                            <td>13.12.2016</td>
+                            <td>
+                                <a href="contact-find.html"><button type="button" class="btn-sm btn-success btn-block">Hab's!</button></a>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
-
-                <button class="btn btn-warning" type="submit" id="cf-failed" name="failed">nicht dabei</button>
+                <a href="save-find.html"><button class="btn btn-warning" type="submit" id="cf-failed" name="failed">nicht dabei</button></a>                
             </div>
-
         </div>         
         <section class="content-block-nopad bg-deepocean footer-wrap-1-3"> 
             <div class="container footer-1-3"> 
@@ -174,7 +193,7 @@
                         </li>                         
                         <li> 
                             <a href="#"><i class="fa fa-2x fa-google-plus"></i></a> 
-                        </li>                                               
+                        </li>                         
                     </ul>                     
                     <!-- /.social -->                     
                 </div>                 

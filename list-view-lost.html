@@ -39,11 +39,11 @@
                     <!-- Navigation -->                     
                     <div class="collapse navbar-collapse"> 
                         <ul class="nav navbar-nav navbar-right"> 
-                            <li class="active nav-item tamarind-hover" pg-id="4981"> 
-                                <a href="#" 982"">Verloren</a> 
+                            <li class="active nav-item"> 
+                                <a href="list-view-lost.html">Verloren</a> 
                             </li>                             
-                            <li class="nav-item data-pg-id=" 983""> 
-                                <a href="#">Gefunden</a> 
+                            <li class="nav-item"> 
+                                <a href="list-view-find.html">Gefunden</a> 
                             </li>                             
                         </ul>                         
                         <!--//nav-->                         
@@ -56,111 +56,124 @@
         </header>         
         <div class="content-block pricing-table-2">
             <div class="container">
+                <p>Beschreibe die Umstände Deines Verlusts und überprüfe, ob der/die FinderIn sich schon gemeldet hat:</p>
                 <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
-                <div class="col-md-3">
-                        <input placeholder="Ort" id="places-list" list="places" class="form-control"/>
+                    <div class="col-md-3">
+                        <input placeholder="Ort" id="places-list" list="places" class="form-control" />
                         <datalist id="places">
-                            <option value="Annaberg"/>
-                            <option value="Bludenz"/>
-                            <option value="Mattersburg"/>
-                            <option value="München"/>
-                            <option value="Wien"/>
-                            <option value="Klagenfurt"/>
+                            <option value="Annaberg" />
+                            <option value="Bludenz" />
+                            <option value="Mattersburg" />
+                            <option value="München" />
+                            <option value="Wien" />
+                            <option value="Klagenfurt" />
                         </datalist>
                     </div>
                     <div class="col-md-3">
-                        <input value = "Carmen ‑ Stadttheater Klagenfurt" placeholder="Veranstaltung" id="events-list" list="events" class="form-control"/>
+                        <input value="Carmen ‑ Stadttheater Klagenfurt" placeholder="Veranstaltung" id="events-list" list="events" class="form-control" />
                         <datalist id="events">
                             <option value="American Christmas Show">
+
                             <option value="Österr. ‑ Ungar. Haydn Philharmonie">
+
                             <option value="Phil Phoenix">
+
                             <option value="Reaggea Konzert">
+
                             <option value="Zillertaler Weihnacht">
-                            <option value="Carmen ‑ Stadttheater Klagenfurt"/>
+                                <option value="Carmen ‑ Stadttheater Klagenfurt" />
                         </datalist>
                     </div>
-                <div class="col-md-3">
-                    <input placeholder="Kategorie" id="category-list" list="categories" class="form-control"/>
-                    <datalist id="categories">
-                        <option value="Geldbörse">
-                        <option value="Handy & Zubehör">
-                        <option value="Bekleidung">
-                        <option value="Die Große Liebe">
-                    </datalist>
-                </div>
-                <div class="col-md-3">
-                    <input type="date" id="date" class="form-control" value="2015-12-15"/>
+                    <div class="col-md-3">
+                        <input placeholder="Kategorie" id="category-list" list="categories" class="form-control" />
+                        <datalist id="categories">
+                            <option value="Geldbörse">
 
-                </div>
-                <div class="col-md-4">
-                    <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Suchen</button>
-                </div>
+                            <option value="Handy & Zubehör">
+
+                            <option value="Bekleidung">
+
+                            <option value="Die Große Liebe">
+                        </datalist>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" id="date" class="form-control" value="2015-12-15" />
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Finder/in suchen</button>
+                    </div>
                 </form>
             </div>
             <!-- /.container -->
             <div id="search-container" class="container" style="visibility: hidden">
+                <p>Eine der folgenden Gegenstände (sortiert nach Relevanz) könnte Dir gehören:</p>
                 <table class="table table-striped table-hover">
                     <thead>
-                    <tr>
-                        <th>Ort</th>
-                        <th>Veranstaltung</th>
-                        <th>Kategorie</th>
-                        <th>Beschreibung</th>
-                        <th>Datum</th>
-                        <th></th>
-                    </tr>
+                        <tr>
+                            <th>Ort</th>
+                            <th>Veranstaltung</th>
+                            <th>Kategorie</th>
+                            <th>Beschreibung</th>
+                            <th>Datum</th>
+                            <th></th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>Klagenfurt</td>
-                        <td>Carmen ‑ Stadttheater Klagenfurt</td>
-                        <td>Geldbörse</td>
-                        <td>Ledergeldbörse Fossil</td>
-                        <td>15.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>Klagenfurt</td>
-                        <td>Carmen ‑ Stadttheater Klagenfurt</td>
-                        <td>Regenschirm</td>
-                        <td>Marke:Benneton</td>
-                        <td>15.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>Klagenfurt</td>
-                        <td>Carmen ‑ Stadttheater Klagenfurt</td>
-                        <td>Smartphone</td>
-                        <td>Marke:Samsung</td>
-                        <td>15.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>Klagenfurt</td>
-                        <td>Carmen ‑ Stadttheater Klagenfurt</td>
-                        <td>Handtasche</td>
-                        <td>Marke:Guess</td>
-                        <td>15.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>Klagenfurt</td>
-                        <td>Carmen ‑ Stadttheater Klagenfurt</td>
-                        <td>Toupet</td>
-                        <td>Schwarz mit blonde Strähnchen</td>
-                        <td>15.12.2016</td>
-                        <td><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></td>
-                    </tr>
+                        <tr>
+                            <td>Klagenfurt</td>
+                            <td>Carmen ‑ Stadttheater Klagenfurt</td>
+                            <td>Geldbörse</td>
+                            <td>Ledergeldbörse Fossil</td>
+                            <td>15.12.2016</td>
+                            <td>
+                              <a href="contact-loss.html"><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></a>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Klagenfurt</td>
+                            <td>Carmen ‑ Stadttheater Klagenfurt</td>
+                            <td>Regenschirm</td>
+                            <td>Marke:Benneton</td>
+                            <td>15.12.2016</td>
+                            <td>
+                                <a href="contact-loss.html"><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></a>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Klagenfurt</td>
+                            <td>Carmen ‑ Stadttheater Klagenfurt</td>
+                            <td>Smartphone</td>
+                            <td>Marke:Samsung</td>
+                            <td>15.12.2016</td>
+                            <td>
+                                <a href="contact-loss.html"><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></a>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Klagenfurt</td>
+                            <td>Carmen ‑ Stadttheater Klagenfurt</td>
+                            <td>Handtasche</td>
+                            <td>Marke:Guess</td>
+                            <td>15.12.2016</td>
+                            <td>
+                                <a href="contact-loss.html"><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></a>   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Klagenfurt</td>
+                            <td>Carmen ‑ Stadttheater Klagenfurt</td>
+                            <td>Toupet</td>
+                            <td>Schwarz mit blonde Strähnchen</td>
+                            <td>15.12.2016</td>
+                            <td>
+                                <a href="contact-loss.html"><button type="button" class="btn-sm btn-danger btn-block">Meins!</button></a>   
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
-
-                <button class="btn btn-warning" type="submit" id="cf-failed" name="failed">nicht dabei</button>
+                <a href="save-loss.html"><button class="btn btn-warning" type="submit" id="cf-failed" name="failed">nicht dabei</button></a>   
+                
             </div>
-
         </div>         
         <section class="content-block-nopad bg-deepocean footer-wrap-1-3"> 
             <div class="container footer-1-3"> 
@@ -176,7 +189,7 @@
                         </li>                         
                         <li> 
                             <a href="#"><i class="fa fa-2x fa-google-plus"></i></a> 
-                        </li>                                               
+                        </li>                         
                     </ul>                     
                     <!-- /.social -->                     
                 </div>                 

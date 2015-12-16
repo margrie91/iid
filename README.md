@@ -1,13 +1,30 @@
 # iid
 interface and interaction design course
 
+Open Issues:
+* (Prio 0) Fehlende Masken
+* (Prio 1) Zurück Button in save-find and save-loss
+* (Prio 2) Home Link via logo
+* (Prio 4) Datenübergabe zwischen den Masken:
+  - list-view-find: Hab's       -> contact-find: Felder mit Daten des Eintrags
+  - list-view-find:Nicht dabei  -> save-find: Textboxen mit Daten der Suche
+  - analog list-view-search
+* (Prio 5) Warnung beim Verlassen einer save oder contact seite via header link bevor die form übertragen wurde  
+* (Prio 6) Datenbasis Liste / Combo inkonsistent -> erweitern
+
 uses bootstrap v3.3.6
 
 <pre>
-|   contact.html
+|   contact-find.html
+|   contact-loss.html
+|   home.html
+|   list-view-find.html
+|   list-view-lost.html
+|   pinegrow.json
 |   README.md                                           this file
-|   save.html
-|   template.html                                       template for your html files  
+|   save-find.html
+|   save-loss.html
+|   template.html                                       template for your html files                                      
 |
 +---bootstrap                                           do not touch bootstrap files
 |   +---css
