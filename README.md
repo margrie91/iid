@@ -5,6 +5,7 @@ Open Issues:
 * (Prio 0) Fehlende Masken
 * (Prio 1) Zurück Button in save-find and save-loss
 * (Prio 2) Home Link via logo
+* (Prio 3) Konsistente Verwendung der Farben
 * (Prio 4) Datenübergabe zwischen den Masken:
   - list-view-find: Hab's       -> contact-find: Felder mit Daten des Eintrags
   - list-view-find:Nicht dabei  -> save-find: Textboxen mit Daten der Suche
