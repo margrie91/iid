@@ -2,7 +2,7 @@
 <html lang="en"> 
     <head> 
         <meta charset="utf-8"> 
-        <title>Lost&amp;Found: Save Loss</title>         
+        <title>Lost&amp;Found: Save Find</title>         
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="shortcut icon" href="ico/favicon.png"> 
         <!-- Core CSS -->         
@@ -17,9 +17,9 @@
         <link href="css/custom.css" rel="stylesheet"> 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->         
         <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-  <![endif]-->         
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->         
     </head>     
     <body data-spy="scroll" data-target="nav"> 
         <header id="header-1" class="header-1"> 
@@ -34,18 +34,18 @@
                             <span class="icon-bar"></span> 
                             <span class="icon-bar"></span> 
                         </button>                         
-                        <a href="home.html"> <img src="images/brand/fundbox-logo-nostrap.png" class="brand-img img-responsive"></a>
+                        <img src="images/brand/fundbox-logo-nostrap.png" class="brand-img img-responsive"> 
                     </div>                     
                     <!-- Navigation -->                     
                     <div class="collapse navbar-collapse"> 
                         <ul class="nav navbar-nav navbar-right"> 
-                            <li class="active nav-item"> 
+                            <li class="nav-item"> 
                                 <a href="list-view-lost.html">Verloren</a> 
                             </li>                             
-                            <li class="nav-item"> 
+                            <li class="active nav-item"> 
                                 <a href="list-view-find.html">Gefunden</a> 
                             </li>                             
-                        </ul>                          
+                        </ul>                        
                         <!--//nav-->                         
                     </div>                     
                     <!--// End Navigation -->                     
@@ -62,11 +62,11 @@
                             <div class="ribbon red-hot"></div>
                             <header> 
                                 <div id="gefunden"> 
-                                    <div class="alert alert-danger" style="padding-top: 0px; position: relative"> 
-                                        <h2 style="margin-bottom: 5px;"><strong>Verloren:</strong> <img class="img-responsive" src="images/new-filled-red.png" style="position: absolute; width:80px; top: 0px; right: 5px"></h2> 
+                                    <div class="alert alert-success" style="padding-top: 0px; position: relative"> 
+                                        <h2 style="margin-bottom: 5px;"><strong>Gefunden:</strong> <img class="img-responsive" src="images/new-filled-red.png" style="position: absolute; width:80px; top: 0px; right: 5px"></h2> 
                                     </div>                                     
                                 </div>
-                            </header>
+                            </header>                             
                             <ul class="features">
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="category">  <i class="fa fa-file-o"></i> &nbsp;Kategorie </label>
@@ -80,7 +80,7 @@
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="place"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort </label>
-                                    <input placeholder="Ort eingeben" list="places" id="place" class="form-control"/>
+                                    <input value="Mattersburg" list="places" id="place" class="form-control"/>
                                     <datalist id="places">
                                         <option value="Annaberg">
                                         </option><option value="Bludenz">
@@ -91,7 +91,7 @@
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="event"> <i class="fa fa-star-o"></i> &nbsp;Veranstaltung </label>
-                                    <input id="event" list="events" placeholder="Veranstaltung eingeben.." class="form-control"/>
+                                    <input id="event" list="events" placeholder="Veranstaltung eingeben..(optional)" class="form-control"/>
                                     <datalist id="events">
                                         <option value="American Christmas Show">
                                         </option><option value="Österr. ‑ Ungar. Haydn Philharmonie">
@@ -102,26 +102,19 @@
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="date"><i class="fa fa-calendar"></i> &nbsp;Datum des Verlustes</label>
-                                    <input id="date" class="form-control" type="date"/>
+                                    <input id="date" class="form-control" value="2015-12-13" type="date"/>
                                 </li>
                             </ul>
-                            <p> Beschreibe den Gegenstand ohne markante Details zu verraten.</p> 
+                            <p> Beschreibe den Gegenstand ohne markante Details zu verraten und vermeide Angaben zum Geldwert.</p> 
                             <p style="font-size: 12px">Hier erfährst Du <a href="#">warum?</a></p> 
-                            <div class="form-group col-xs-12" style="padding-left: 0px; padding-right: 0px">
-                                <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="3" placeholder="Beschreibung"></textarea>
-                                <div style="margin-top: 20px"> 
-                                    <p class="col-xs-7" style="padding-left: 0px; margin-top: 8px;">Du kannst auch einen Finderlohn festlegen:</p> 
-                                    <div class="input-group col-xs-5" style="min-width: 120px;"> 
-                                        <span class="input-group-addon">€</span>
-                                        <input min="5" max="100" step="5" value="0" type="number" class="form-control currency" />
-                                    </div>
-                                </div>                                 
-                            </div>
+                            <div class="form-group"> 
+                                <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Beschreibung"></textarea>                                 
+                            </div>                             
                             <!-- /.features -->
                         </div>
                     </div>
                     <div class="col-md-6"> 
-                        <p>Sobald sich der/die FinderIn meldet, senden wir Dir ein Email!</p>
+                        <p>Sobald sich der/die BesitzerIn meldet, senden wir Dir ein Email!</p>
                         <div id="contact" class="form-container"> 
                             <fieldset> 
                                 <form method="post" action="js/contact-form.php" name="contactform" id="contactform"> 
@@ -175,11 +168,11 @@
                 </div>                 
                 <div class="col-md-3 pull-right"> 
                     <p class="address"> 
-      Interface &amp; Interaction Design</p> 
+					Interface &amp; Interaction Design</p> 
                     <p class="address small"> 
-                  David Fischak<br> 
-                  Dunja Chinchilla<br> 
-                  Martin Griesler</p> 
+                      David Fischak<br> 
+                      Dunja Chinchilla<br> 
+                      Martin Griesler</p> 
                 </div>                 
                 <div class="col-xs-12 footer-text"> 
                     <div class="col-md-4 col-xs-12"> 
@@ -193,7 +186,7 @@
             <!-- /.container -->             
         </section>         
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>         
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>       
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>        
         <script type="text/javascript" src="js/plugins.js"></script>         
         <script src="https://maps.google.com/maps/api/js?sensor=true"></script>         
         <script type="text/javascript" src="js/bskit-scripts.js"></script>

@@ -2,9 +2,8 @@
 <html lang="en"> 
     <head> 
         <meta charset="utf-8"> 
-        <title>Lost&amp;Found: Contact</title>         
+        <title>Lost&amp;Found: Template</title>         
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
         <link rel="shortcut icon" href="ico/favicon.png"> 
         <!-- Core CSS -->         
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
@@ -35,7 +34,7 @@
                             <span class="icon-bar"></span> 
                             <span class="icon-bar"></span> 
                         </button>                         
-                        <a href="home.html"> <img src="images/brand/fundbox-logo-nostrap.png" class="brand-img img-responsive"></a>
+                        <img src="images/brand/fundbox-logo-nostrap.png" class="brand-img img-responsive"> 
                     </div>                     
                     <!-- Navigation -->                     
                     <div class="collapse navbar-collapse"> 
@@ -43,7 +42,7 @@
                             <li class="nav-item"> 
                                 <a href="list-view-lost.html">Verloren</a> 
                             </li>                             
-                            <li class="active nav-item"> 
+                            <li class="nav-item"> 
                                 <a href="list-view-find.html">Gefunden</a> 
                             </li>                             
                         </ul>                        
@@ -57,67 +56,7 @@
         </header>         
         <div class="content-block pricing-table-2"> 
             <div class="container"> 
-                <div class="row"> 
-                    <div class="col-md-6">  
-                      <div class="price-block">
-                            <div class="ribbon red-hot"></div>
-                            <header> 
-                                <div id="gefunden"> 
-                               <div class="alert alert-success" style="padding-top: 0px; position: relative"> 
-                                        <h2 style="margin-bottom: 5px;"><strong>Ich hab's!</strong> <img class="img-responsive" src="images/new-messages-red.png" style="position: absolute; width:80px; top: 20px; right: 5px"></h2> 
-                                    </div>                                          
-                                </div>
-                            </header>                             
-                            <ul class="features">
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-file-o"></i> &nbsp;Kategorie
-                                </li>
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort
-                                </li>
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-calendar"></i> &nbsp;Datum
-                                </li>
-                            </ul>
-                            <p>Schreibe der/m glücklichen WiederfinderIn eine Nachricht:</p>
-                            <div class="form-group"> 
-                                <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Nachricht"></textarea>                                 
-                            </div>                               
-                            <!-- /.features -->
-                        </div>                        
-                    </div>                     
-                    <div class="col-md-6"> 
-                      <p>Vergiss nicht, gültige Kontaktdaten anzugeben, damit sie/er Dich auch erreichen kann!</p>
-                        <div id="contact" class="form-container"> 
-                            <fieldset> 
-                                <form method="post" action="js/contact-form.php" name="contactform" id="contactform"> 
-                                    <div class="form-group"> 
-                                        <input name="name" id="name" type="text" value="" placeholder="Name" class="form-control" /> 
-                                    </div>                                     
-                                    <div class="input-group" style="margin-bottom:20px">
-                                        <input name="email" id="email" type="text" value="" placeholder="Email" class="form-control" /> 
-                                        <span class="input-group-addon"><i class="fa fa-asterisk "></i></span>
-                                    </div>
-                                    <div class="form-group"> 
-                                        <input name="phone" id="phone" type="text" value="" placeholder="Phone" class="form-control" /> 
-                                    </div>                                     
-                                    <div class="editContent"> 
-                                        <div class="checkbox"> 
-                                            <label class="control-label"> 
-                                                <input type="checkbox" value="">Ich habe die 
-                                                <a href="#">Nutzungsbedingungen</a> gelesen und bin einverstanden.     
-                                            </label>                                             
-                                        </div>                                         
-                                        <p style="font-size: 12px">Selbstverständlich geben wir Deine Daten nicht an Dritte weiter und sie sind auch für niemanden einsehbar. <br>Weitere Informationen  findest Du in unserer <a href="#" d="4903">Datenschutzerklärung</a>.</p>
-                                        <button class="btn btn-primary" type="submit" id="cf-submit" name="submit">Absenden</button>                                         
-                                    </div>                                     
-                                </form>                                 
-                            </fieldset>                             
-                        </div>     
-                        <!-- /.form-container -->                         
-                    </div>                     
-                </div>                 
-                <!-- /.row -->                 
+              
             </div>             
             <!-- /.container -->             
         </div>         
@@ -158,7 +97,7 @@
                 <!-- /.container -->                 
         </section>         
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>         
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>       
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>     
         <script type="text/javascript" src="js/plugins.js"></script>         
         <script src="https://maps.google.com/maps/api/js?sensor=true"></script>         
         <script type="text/javascript" src="js/bskit-scripts.js"></script>         
