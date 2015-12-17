@@ -1,12 +1,15 @@
 # iid
 interface and interaction design course
 
+GENERAL IMPORTAINT INFO:
+This website is optimized and tested for Chrome Browser.
+
 Open Issues:
 * (Prio 0) Fehlende Masken
 * (Prio 1) Zurück Button in save-find and save-loss
 * (Prio 2) Home Link via logo  <<<<<<< SOLVED <<<<<<<		
 * (Prio 3) Konsistente Verwendung der Farben
-* (Prio 4) Datenübergabe zwischen den Masken:
+* (Prio 4) Datenübergabe zwischen den Masken: <<<<<<< SOLVED <<<<<<<	
   - list-view-find: Hab's       -> contact-find: Felder mit Daten des Eintrags
   - list-view-find:Nicht dabei  -> save-find: Textboxen mit Daten der Suche
   - analog list-view-search
