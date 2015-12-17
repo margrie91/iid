@@ -8,7 +8,7 @@ repository link: https://github.com/margrie91/iid.git
 
 Open Issues:
 * (Prio 0) Fehlende Masken
-* (Prio 1) Zurück Button in save-find and save-loss
+* (Prio 1) Zurück Button in save-find and save-loss <<<<<<< SOLVED <<<<<<<
 * (Prio 2) Home Link via logo  <<<<<<< SOLVED <<<<<<<		
 * (Prio 3) Konsistente Verwendung der Farben <<<<<<< SOLVED <<<<<<<	
 * (Prio 4) Datenübergabe zwischen den Masken: <<<<<<< SOLVED <<<<<<<	
