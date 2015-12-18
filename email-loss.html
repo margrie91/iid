@@ -57,7 +57,7 @@
         </header>
         <section class="content-block pricing-table-2" style="padding-bottom:40px;">
           <div class="container">
-              <div class="row" style="margin-bottom: 25px;">
+              <div class="price-block">
                   <cite>
                     <h1 style="text-align:left; margin-left: 20px;">
                       Jemand hat das, wonach du suchst, gefunden!
@@ -66,69 +66,64 @@
                   </cite>
 
                   <div class="col-md-6">
-                    <fieldset>
+                    <fieldset style="font-size: 16px;">
                       <div style="font-size: 20px;">
                         <span class="glyphicon glyphicon-user"></span>
                         &nbsp;Diese nette Person hat's gefunden:
                       </div>
-
                       <div style="font-size: 16px; ">
                         </br>
                           <label>FinderIn:</label>&nbsp;&nbsp;<mark>Sherlock Holmes</mark>
                       </br>
                       </br>
-                        Die/der FinderIn hat sowohl eine Telefonnummer, als auch eine Email-Adresse hinterlassen.
-                        Du kannst dich also entweder telefonisch melden, oder einfach eine Email schreiben,
-                        indem du auf den Link klickst.
+                        Die/der FinderIn hat eine Telefonnummer und eine Email-Adresse angegeben. Du kannst dich also entweder telefonisch melden, oder einfach eine Email schreiben. 
                         </br>
                         </br>
-                        <label>Email:</label>&nbsp;&nbsp;<a href="mail-client-dummy-loss.html">sherlock.holmes@royal.mail</a>
+                        <label>Email:</label>&nbsp;&nbsp;<a href="mailto:sherlock.holmes@royal.mail?subject=lost%26found: Mir gehört's!">sherlock.holmes@royal.mail</a>
                         </br>
                         </br>
                         <label>Telefonnummer:</label>&nbsp;&nbsp;<mark>0676 / 000 00 00</mark>
                       </br>
                       </br>
-                      <div class="form-group">
                         Er/Sie hat dir auch eine <label>Nachricht</label> hinterlassen:
-                        <textarea class="form-control" rows="5" id="message" style="color: #000000" readonly>Ich hab dieses hübsche Toupet am Parkplatz gefunden.
+                        <textarea class="form-control" rows="5" id="message" style="color: #000000; margin-top: 5px; padding: 10px; resize: vertical; min-height:80px" readonly>Ich hab dieses hübsche Toupet am Parkplatz gefunden.
                         </textarea>
-                      <hr>
-                      <a href="./delete-loss.html">
-                        Indem du auf diesen Absatz klickst, kannst du den Eintrag dieses Gegenstands <strong>löschen</strong> und deine Erfahrung mit uns <strong>bewerten</strong>.
-                        Bitte vergiss nicht dies zu tun, sobald das Gesuchte gefunden wurde!
-                      </a>
                     </fieldset>
                   </div>
-
                   <div class="col-md-6">
-                    <fieldset>
-                    <div style="font-size: 20px; margin-left: -15px;">
-                      <span class="glyphicon glyphicon-search"></span>
-                      &nbsp;Dein gesuchter Gegenstand:
-                    </div>
-                    </br>
-                    <form class="form-inline" role="form">
-                      <div class="row"  style="font-size: 16px; ">
-                        <label>Beschreibung:</label>&nbsp;&nbsp;
-                        <input type="beschreibung" class="form-control" value="Toupet, Schwarz mit blonden Strähnchen" style="color: #000000; margin-left:10px;" readonly size="42"/>
+                  <fieldset >
+                      <div style="font-size: 20px;">
+                        <span class="glyphicon glyphicon-search"></span>
+                        &nbsp;Dein gesuchter Gegenstand:
                       </div>
-                    </br>
-                      <div class="row"  style="font-size: 16px; ">
-                        <label>Veranstaltung:</label>&nbsp;&nbsp;
-                        <input type="veranstaltung" class="form-control" value="Carmen ‑ Stadttheater Klagenfurt" style="color: #000000; margin-left:4px;" readonly size="42"/>
+                      </br>
+                      <table class="features" style="font-size: 20px; margin-left: 40px;">
+                      <col width="180">
+                      <tr>
+                          <td><i class="fa fa-file-o"></i> &nbsp;Kategorie: </td>
+                          <td><em style="color:rgb(60, 118, 61);">Sonstiges</em></td>
+                      </tr>
+                      <tr>
+                          <td><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort: </td>
+                          <td><em style="color:rgb(60, 118, 61);">Klagenfurt</em></td>
+                      </tr>
+                      <tr>
+                          <td><i class="fa fa-star-o"></i>&nbsp;&nbsp;Veranstaltung: </td>
+                          <td><em style="color:rgb(60, 118, 61);">Carmen Stadttheater Klagenfurt</em></td>
+                      </tr>
+                      <tr>
+                          <td><i class="fa fa-calendar"></i> &nbsp;Datum: </td>
+                          <td><em style="color:rgb(60, 118, 61);">15.12.2016</em></td>
+                      </tr>
+                      </table>
+                      <p style="font-size: 20px;">Beschreibung:</p>
+                      <textarea class="form-control" rows="3" id="message" style="color: #000000; margin-top: 5px; padding: 10px; resize: vertical; min-height:80px" readonly>Toupet, Schwarz mit blonden Strähnchen
+                      </textarea>
+                      <div class="alert alert-success" style="padding: 30px; margin-top:30px;" >
+                        Bitte lösche den Eintrag dieses Gegenstands, sobald Du mit der/dem FinderIn Kontakt aufgenommen hast!<br>
+                        <a href="./delete-loss.html" class="btn btn-primary" type="button" style="margin-top:20px; margin-bottom: 0px;">Eintrag Löschen</a>   
                       </div>
-                    </br>
-                      <div class="row"  style="font-size: 16px; ">
-                        <label>Ort:</label>&nbsp;&nbsp;
-                        <input type="ort" class="form-control" value="Klagenfurt" style="margin-left:90px; color: #000000;" readonly size="42"/>
-                      </div>
-                  </br>
-                    <div class="row"  style="font-size: 16px; ">
-                      <label>Datum:</label>&nbsp;&nbsp;
-                      <input type="datum" class="form-control" value="15.12.2015" style="margin-left:62px; color: #000000;" readonly size="42"/>
-                    </div>
-                  </form>
-                  </fieldset>
+                    </fieldset>
                   </div>
               </div>
             </div>
