@@ -67,26 +67,43 @@
                                     </div>
                                 </div>
                             </header>
-                            <ul class="features">
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-file-o"></i> &nbsp;Kategorie: <em style="color:rgb(169, 68, 66)">Regenschirm</em>
-                                </li>
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort: <em style="color:rgb(169, 68, 66)">Klagenfurt</em>
-                                </li>
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-calendar"></i> &nbsp;Datum: <em style="color:rgb(169, 68, 66)">15.12.2016</em>
-                                </li>
-                            </ul>
-                            <p>Schreibe dem/r freundlichen FinderIn eine Nachricht:</p>
-                            <div class="form-group">
-                                <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Nachricht"></textarea>
+                            <fieldset>
+                            <div style="font-size: 20px;">
+                              <span class="glyphicon glyphicon-search"></span>
+                              &nbsp;Dein verlorener Gegenstand:
                             </div>
-                            <!-- /.features -->
+                            </br>
+                            <table class="features" style="font-size: 20px; margin-left: 40px;">
+                            <col width="180">
+                            <tr>
+                                <td><i class="fa fa-file-o"></i> &nbsp;Kategorie: </td>
+                                <td><em style="color:rgb(169, 68, 66);">Sonstiges</em></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort: </td>
+                                <td><em style="color:rgb(169, 68, 66);">Klagenfurt</em></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-star-o"></i>&nbsp;&nbsp;Veranstaltung: </td>
+                                <td><em style="color:rgb(169, 68, 66);">Carmen Stadttheater Klagenfurt</em></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-calendar"></i> &nbsp;Datum: </td>
+                                <td><em style="color:rgb(169, 68, 66);">15.12.2016</em></td>
+                            </tr>
+                            </table>
+                            <p style="font-size: 20px;">Beschreibung:</p>
+                            <textarea class="form-control" rows="3" id="message" style="color: #000000; margin-top: 5px; padding: 10px; resize: vertical; min-height:80px" readonly>Toupet, Schwarz mit blonden Strähnchen
+                            </textarea>
+                        </fieldset>
                         </div>
                     </div>
                     <div class="col-md-6">
-                    <p>Vergiss nicht, gültige Kontaktdaten anzugeben, damit er/sie Dich auch erreichen kann!</p>
+                    <p style="margin-top: 25px; font-size: 20px;">Schreibe dem/r freundlichen FinderIn eine Nachricht:</p>
+                    <div class="form-group">
+                        <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Nachricht"></textarea>
+                    </div>
+                    <p style="font-size: 20px;">Vergiss nicht, gültige Kontaktdaten anzugeben, damit er/sie Dich auch erreichen kann!</p>
                        <div id="contact" class="form-container">
                             <fieldset>
                                 <form method="post" action="js/contact-form.php" name="contactform" id="contactform">

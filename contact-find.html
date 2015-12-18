@@ -69,26 +69,43 @@
                                     </div>
                                 </div>
                             </header>
-                            <ul class="features">
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-file-o"></i> &nbsp;Kategorie: <em style="color:rgb(60, 118, 61);">Geldbörse</em>
-                                </li>
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort: <em style="color:rgb(60, 118, 61);">Mattersburg</em>
-                                </li>
-                                <li style="font-size: 20px;">
-                                    <i class="fa fa-calendar"></i> &nbsp;Datum: <em style="color:rgb(60, 118, 61);">16.12.2016</em>
-                                </li>
-                            </ul>
-                            <p>Schreibe der/m glücklichen WiederfinderIn eine Nachricht:</p>
-                            <div class="form-group">
-                                <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Nachricht"></textarea>
-                            </div>
-                            <!-- /.features -->
+                            <fieldset >
+                              <div style="font-size: 20px;">
+                                <span class="glyphicon glyphicon-search"></span>
+                                &nbsp;Der von dir gefundene Gegenstand:
+                              </div>
+                              </br>
+                              <table class="features" style="font-size: 20px; margin-left: 40px;">
+                              <col width="180">
+                              <tr>
+                                  <td><i class="fa fa-file-o"></i> &nbsp;Kategorie: </td>
+                                  <td><em style="color:rgb(60, 118, 61);">Geldbörse</em></td>
+                              </tr>
+                              <tr>
+                                  <td><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort: </td>
+                                  <td><em style="color:rgb(60, 118, 61);">Mattersburg</em></td>
+                              </tr>
+                              <tr>
+                                  <td><i class="fa fa-star-o"></i>&nbsp;&nbsp;Veranstaltung: </td>
+                                  <td><em style="color:rgb(60, 118, 61);">Phil Phoenix</em></td>
+                              </tr>
+                              <tr>
+                                  <td><i class="fa fa-calendar"></i> &nbsp;Datum: </td>
+                                  <td><em style="color:rgb(60, 118, 61);">13.12.2016</em></td>
+                              </tr>
+                              </table>
+                              <p style="font-size: 20px;">Beschreibung:</p>
+                              <textarea class="form-control" rows="3" id="message" style="color: #000000; margin-top: 5px; padding: 10px; resize: vertical; min-height:80px" readonly>Ledergeldbörse Fossil
+                              </textarea>
+                            </fieldset>
                         </div>
                     </div>
                     <div class="col-md-6">
-                      <p>Vergiss nicht, gültige Kontaktdaten anzugeben, damit sie/er Dich auch erreichen kann!</p>
+                    <p style="margin-top: 25px; font-size: 20px;">Schreibe der/m glücklichen BesitzerIn eine Nachricht:</p>
+                    <div class="form-group">
+                        <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Nachricht"></textarea>
+                    </div>
+                      <p style="font-size: 20px;">Vergiss nicht, gültige Kontaktdaten anzugeben, damit sie/er Dich auch erreichen kann!</p>
                         <div id="contact" class="form-container">
                             <fieldset>
                                 <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
