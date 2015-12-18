@@ -70,35 +70,38 @@
                             <ul class="features">
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="category">  <i class="fa fa-file-o"></i> &nbsp;Kategorie </label>
-                                    <input placeholder="Toupet" list="categories" id="category" class="form-control"/>
+                                    <input value="Sonstiges" placeholder="Kategorie eingeben.." list="categories" id="category" class="form-control"/>
                                     <datalist id="categories">
-                                        <option value="Geldbörse">
-                                        </option><option value="Handy &amp; Zubehör">
-                                    </option><option value="Bekleidung">
-                                    </option><option value="Die Große Liebe">
-                                    </option></datalist>
+                                      <option value="Bekleidung"/>
+                                      <option value="Die Große Liebe"/>
+                                      <option value="Geldbörse"/>
+                                      <option value="Handy &amp; Zubehör"/>
+                                      <option value="Sonstiges"/>
+                                    </datalist>
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="place"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort </label>
-                                    <input placeholder="Klagenfurt" list="places" id="place" class="form-control"/>
+                                    <input value="Klagenfurt" placeholder="Ort eingeben" list="places" id="place" class="form-control"/>
                                     <datalist id="places">
-                                        <option value="Annaberg">
-                                        </option><option value="Bludenz">
-                                    </option><option value="Mattersburg">
-                                    </option><option value="München">
-                                    </option><option value="Wien">
-                                    </option></datalist>
+                                      <option value="Annaberg"/>
+                                      <option value="Bludenz"/>
+                                      <option value="Klagenfurt"/>
+                                      <option value="Mattersburg"/>
+                                      <option value="München"/>
+                                      <option value="Wien"/> 
+                                  </datalist>
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="event"> <i class="fa fa-star-o"></i> &nbsp;Veranstaltung </label>
-                                    <input id="event" list="events" placeholder="	Carmen ‑ Stadttheater Klagenfurt" class="form-control"/>
+                                    <input value="Carmen ‑ Stadttheater" id="event" list="events" placeholder="Veranstaltung eingeben.." class="form-control"/>
                                     <datalist id="events">
-                                        <option value="American Christmas Show">
-                                        </option><option value="Österr. ‑ Ungar. Haydn Philharmonie">
-                                    </option><option value="Phil Phoenix">
-                                    </option><option value="Reaggea Konzert">
-                                    </option><option value="Zillertaler Weihnacht">
-                                    </option></datalist>
+                                      <option value="American Christmas Show"/>
+                                      <option value="Österr. ‑ Ungar. Haydn Philharmonie"/>
+                                      <option value="Phil Phoenix"/>
+                                      <option value="Reaggea Konzert"/>
+                                      <option value="Zillertaler Weihnacht"/>
+                                      <option value="Carmen ‑ Stadttheater" />
+                                    </datalist>
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="date"><i class="fa fa-calendar"></i> &nbsp;Datum des Fundes</label>
@@ -113,7 +116,7 @@
                       <p> Beschreibe den Gegenstand ohne markante Details zu verraten und vermeide Angaben zum Geldwert.</p>
                       <p style="font-size: 12px">Hier erfährst Du <a href="#">warum?</a></p>
                       <div class="form-group">
-                          <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Toupet, Schwarz mit blonden Strähnchen"></textarea>
+                          <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5">Toupet, schwarz mit blonden Strähnchen</textarea>
                       </div>
                       <div style="text-align: right;">
                         <a href="./entry-saved-loss.html"><button class="btn btn-primary" type="button">Speichern</button></a>

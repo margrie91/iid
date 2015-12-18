@@ -1,22 +1,26 @@
-# iid
-interface and interaction design course
+# iid W2015 #
+interface and interaction design course 
 
-GENERAL IMPORTAINT INFO:
+## Important Information ##
 This website is optimized and tested for Chrome Browser.
+Known issues with Mozilla Firefox: DatePicker / Dateformat dd.mm.YYYY
 
 repository link: https://github.com/margrie91/iid.git
 
-Open Issues:
-* (Prio 0) Fehlende Masken
+Solved Issues:
+* (Prio 0) Fehlende Seiten <<<<<<< SOLVED <<<<<<<
 * (Prio 1) Zurück Button in save-find and save-loss <<<<<<< SOLVED <<<<<<<
-* (Prio 2) Home Link via logo  <<<<<<< SOLVED <<<<<<<		
+* (Prio 2) Home Link via Logo  <<<<<<< SOLVED <<<<<<<		
 * (Prio 3) Konsistente Verwendung der Farben <<<<<<< SOLVED <<<<<<<	
-* (Prio 4) Datenübergabe zwischen den Masken: <<<<<<< SOLVED <<<<<<<	
+* (Prio 4) Datenbasis inkonsistent -> erweitern <<<<<<< SOLVED <<<<<<<
+* (Prio 5) Datenübergabe zwischen den Masken: <<<<<<< SOLVED <<<<<<<	
   - list-view-find: Hab's       -> contact-find: Felder mit Daten des Eintrags
-  - list-view-find:Nicht dabei  -> save-find: Textboxen mit Daten der Suche
-  - analog list-view-search
-* (Prio 5) Warnung beim Verlassen einer save oder contact seite via header link bevor die form übertragen wurde  
-* (Prio 6) Datenbasis Liste / Combo inkonsistent -> erweitern
+  - list-view-find: Nicht dabei -> save-find: Textboxen mit Daten der Suche
+  - analog list-view-search	
+  
+Open Issues:
+* (Prio 6) Warnung beim Verlassen einer save oder contact seite via header link bevor die form übertragen wurde  
+* (Prio 7) Firefox: DatePicker / Dateformat dd.mm.YYYY
 
 uses bootstrap v3.3.6
 

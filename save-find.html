@@ -61,7 +61,7 @@
                         <div class="price-block">
                             <div class="ribbon red-hot"></div>
                             <header>
-                                <a href="list-view-find.html"><button type="button" class="btn btn-primary"><span class = "glyphicon glyphicon-chevron-left"></span>zurück zur Suche</button></a>
+                                <a href="list-view-find.html"><button type="button" class="btn btn-warning"><span class = "glyphicon glyphicon-chevron-left"></span>Zurück zur Suche</button></a>
                                 <div id="gefunden">
                                     <div class="alert alert-success" style="padding-top: 0px; position: relative">
                                         <h2 style="margin-bottom: 5px;"><strong>Gefunden:</strong> <img class="img-responsive" src="images/new-filled-red.png" style="position: absolute; width:80px; top: 0px; right: 5px"></h2>
@@ -73,49 +73,51 @@
                                     <label for="category">  <i class="fa fa-file-o"></i> &nbsp;Kategorie </label>
                                     <input value="Geldbörse" placeholder="Kategorie eingeben.." list="categories" id="category" class="form-control"/>
                                     <datalist id="categories">
-                                        <option value="Geldbörse">
-                                        </option><option value="Handy &amp; Zubehör">
-                                    </option><option value="Bekleidung">
-                                    </option><option value="Die Große Liebe">
-                                    </option></datalist>
+                                      <option value="Bekleidung"/>
+                                      <option value="Die Große Liebe"/>
+                                      <option value="Geldbörse"/>
+                                      <option value="Handy &amp; Zubehör"/>
+                                      <option value="Sonstiges"/>
+                                    </datalist>
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="place"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Ort </label>
                                     <input value="Mattersburg" list="places" id="place" class="form-control"/>
                                     <datalist id="places">
-                                        <option value="Annaberg">
-                                        </option><option value="Bludenz">
-                                    </option><option value="Mattersburg">
-                                    </option><option value="München">
-                                    </option><option value="Wien">
-                                    </option></datalist>
+                                      <option value="Annaberg"/>
+                                      <option value="Bludenz"/>
+                                      <option value="Klagenfurt"/>
+                                      <option value="Mattersburg"/>
+                                      <option value="München"/>
+                                      <option value="Wien"/> 
+                                    </datalist>
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="event"> <i class="fa fa-star-o"></i> &nbsp;Veranstaltung </label>
                                     <input value="Phil Phoenix" id="event" list="events" placeholder="Veranstaltung eingeben..(optional)" class="form-control"/>
                                     <datalist id="events">
-                                        <option value="American Christmas Show">
-                                        </option><option value="Österr. ‑ Ungar. Haydn Philharmonie">
-                                    </option><option value="Phil Phoenix">
-                                    </option><option value="Reaggea Konzert">
-                                    </option><option value="Zillertaler Weihnacht">
-                                    </option></datalist>
+                                      <option value="American Christmas Show"/>
+                                      <option value="Österr. ‑ Ungar. Haydn Philharmonie"/>
+                                      <option value="Phil Phoenix"/>
+                                      <option value="Reaggea Konzert"/>
+                                      <option value="Zillertaler Weihnacht"/>
+                                      <option value="Carmen ‑ Stadttheater" />
+                                    </datalist>
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="date"><i class="fa fa-calendar"></i> &nbsp;Datum des Fundes</label>
                                     <input id="date" class="form-control" value="2015-12-13" type="date"/>
                                 </li>
                             </ul>
-                            <p> Beschreibe den Gegenstand ohne markante Details zu verraten und vermeide Angaben zum Geldwert.</p>
-                            <p style="font-size: 12px">Hier erfährst Du <a href="#">warum?</a></p>
-                            <div class="form-group">
-                                <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Beschreibung"></textarea>
-                            </div>
-                            <!-- /.features -->
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Sobald sich der/die BesitzerIn meldet, senden wir Dir ein Email!</p>
+                        <p style="margin-bottom:0px;"> Beschreibe den Gegenstand ohne markante Details zu verraten und vermeide Angaben zum Geldwert.</p>
+                        <div style="font-size: 12px; margin-bottom:15px;">Hier erfährst Du <a href="#">warum?</a></div>
+                        <div class="form-group col-xs-12" style="padding-left: 0px; padding-right: 0px; margin-bottom:20px;">
+                            <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="3" placeholder="Beschreibung">Ledergeldbörse Fossil</textarea>
+                        </div>
+                        <p style="margin-top:15px;">Sobald sich der/die BesitzerIn meldet, senden wir Dir ein Email!</p>
                         <div id="contact" class="form-container">
                             <fieldset>
                                 <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
