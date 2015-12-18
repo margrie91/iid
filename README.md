@@ -2,7 +2,7 @@
 interface and interaction design course 
 
 ### Important Information ###
-This website is optimized and tested for Chrome Browser.
+This website is optimized and tested for Chrome Browser.  
 Known issues with Mozilla Firefox: DatePicker / Dateformat dd.mm.YYYY
 
 ### Repository link: ###
@@ -23,8 +23,8 @@ https://github.com/margrie91/iid.git
 * (Prio 6) Warnung beim Verlassen einer save oder contact seite via header link bevor die form übertragen wurde  
 * (Prio 7) Firefox: DatePicker / Dateformat dd.mm.YYYY
 
-uses bootstrap v3.3.6
-
+#### Index ####
+Responsive layout based on bootstrap v3.3.6
 <pre>
 |   contact-find.html
 |   contact-loss.html
