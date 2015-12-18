@@ -88,7 +88,6 @@ Responsive layout based on bootstrap v3.3.6
 |
 +---doc                                                                
 |       storyboard_0.1.jpg                          as created on 09.12.2015
-|       Entwurf.jpg
 |
 +---fonts
 |       fontawesome-webfont.eot
