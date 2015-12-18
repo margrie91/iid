@@ -60,7 +60,7 @@
               <div class="row" style="margin-bottom: 25px;">
                   <cite>
                     <h1 style="text-align:left; margin-left: 20px;">
-                      Jemand sucht das, was du gefunden hast!
+                      Jemand hat das, wonach du suchst, gefunden!
                     </h1>
                   </br>
                   </cite>
@@ -69,27 +69,32 @@
                     <fieldset>
                       <div style="font-size: 20px;">
                         <span class="glyphicon glyphicon-user"></span>
-                        &nbsp;Diese Person sucht's:
+                        &nbsp;Diese nette Person hat's gefunden:
                       </div>
 
                       <div style="font-size: 16px; ">
                         </br>
-                          Suchende:&nbsp;&nbsp;<mark>Patrick Star</mark>
+                          <label>FinderIn:</label>&nbsp;&nbsp;<mark>Sherlock Holmes</mark>
                       </br>
                       </br>
-                        Die/der Suchende hat sowohl eine Telefonnummer, als auch eine Email-Adresse hinterlassen.
+                        Die/der FinderIn hat sowohl eine Telefonnummer, als auch eine Email-Adresse hinterlassen.
                         Du kannst dich also entweder telefonisch melden, oder einfach eine Email schreiben,
                         indem du auf den Link klickst.
                         </br>
                         </br>
-                        Email:&nbsp;&nbsp;<a href="mailto:patrick.star@bikinibottom.mail">patrick.star@bikinibottom.mail</a>
+                        <label>Email:</label>&nbsp;&nbsp;<a href="mail-client-dummy-loss.html">sherlock.holmes@royal.mail</a>
                         </br>
                         </br>
-                        Telefonnummer:&nbsp;&nbsp;<mark>0936 / 000 00 00</mark>
+                        <label>Telefonnummer:</label>&nbsp;&nbsp;<mark>0676 / 000 00 00</mark>
                       </br>
+                      </br>
+                      <div class="form-group">
+                        Er/Sie hat dir auch eine <label>Nachricht</label> hinterlassen:
+                        <textarea class="form-control" rows="5" id="message" style="color: #000000" readonly>Ich hab dieses hübsche Toupet am Parkplatz gefunden.
+                        </textarea>
                       <hr>
-                      <a>
-                        Indem du auf diesen Absatz klickst, kannst du den Eintrag dieses Gegenstands löschen.
+                      <a href="./delete-loss.html">
+                        Indem du auf diesen Absatz klickst, kannst du den Eintrag dieses Gegenstands <strong>löschen</strong> und deine Erfahrung mit uns <strong>bewerten</strong>.
                         Bitte vergiss nicht dies zu tun, sobald das Gesuchte gefunden wurde!
                       </a>
                     </fieldset>
@@ -97,30 +102,30 @@
 
                   <div class="col-md-6">
                     <fieldset>
-                    <div style="font-size: 20px;">
+                    <div style="font-size: 20px; margin-left: -15px;">
                       <span class="glyphicon glyphicon-search"></span>
-                      &nbsp;Der von dir gefundene Gegenstand:
+                      &nbsp;Dein gesuchter Gegenstand:
                     </div>
                     </br>
                     <form class="form-inline" role="form">
                       <div class="row"  style="font-size: 16px; ">
-                        Beschreibung: &nbsp;&nbsp;
-                        <input type="beschreibung" class="form-control" value="Ledergeldbörse Fossil" style="color: #000000;" readonly size="44"/>
+                        <label>Beschreibung:</label>&nbsp;&nbsp;
+                        <input type="beschreibung" class="form-control" value="Toupet, Schwarz mit blonden Strähnchen" style="color: #000000; margin-left:10px;" readonly size="42"/>
                       </div>
                     </br>
                       <div class="row"  style="font-size: 16px; ">
-                        Veranstaltung: &nbsp;&nbsp;
-                        <input type="veranstaltung" class="form-control" value="Österr. ‑ Ungar. Haydn Philharmonie" style="color: #000000;" readonly size="44"/>
+                        <label>Veranstaltung:</label>&nbsp;&nbsp;
+                        <input type="veranstaltung" class="form-control" value="Carmen ‑ Stadttheater Klagenfurt" style="color: #000000; margin-left:4px;" readonly size="42"/>
                       </div>
                     </br>
                       <div class="row"  style="font-size: 16px; ">
-                        Ort: &nbsp;&nbsp;
-                        <input type="ort" class="form-control" value="Mattersburg" style="margin-left:80px; color: #000000;" readonly size="44"/>
+                        <label>Ort:</label>&nbsp;&nbsp;
+                        <input type="ort" class="form-control" value="Klagenfurt" style="margin-left:90px; color: #000000;" readonly size="42"/>
                       </div>
                   </br>
                     <div class="row"  style="font-size: 16px; ">
-                      Datum: &nbsp;&nbsp;
-                      <input type="datum" class="form-control" value="13.12.2015" style="margin-left:54px; color: #000000;" readonly size="44"/>
+                      <label>Datum:</label>&nbsp;&nbsp;
+                      <input type="datum" class="form-control" value="15.12.2015" style="margin-left:62px; color: #000000;" readonly size="42"/>
                     </div>
                   </form>
                   </fieldset>
