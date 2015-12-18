@@ -39,10 +39,10 @@
                     <!-- Navigation -->
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item">
+                            <li class="active nav-item">
                                 <a href="list-view-lost.html">Verloren</a>
                             </li>
-                            <li class="active nav-item">
+                            <li class="nav-item">
                                 <a href="list-view-find.html">Gefunden</a>
                             </li>
                         </ul>
@@ -61,17 +61,16 @@
                         <div class="price-block">
                             <div class="ribbon red-hot"></div>
                             <header>
-                                <a href="list-view-find.html"><button type="button" class="btn btn-primary"><span class = "glyphicon glyphicon-chevron-left"></span>zurück zur Suche</button></a>
                                 <div id="gefunden">
-                                    <div class="alert alert-success" style="padding-top: 0px; position: relative">
-                                        <h2 style="margin-bottom: 5px;"><strong>Gefunden:</strong> <img class="img-responsive" src="images/new-filled-red.png" style="position: absolute; width:80px; top: 0px; right: 5px"></h2>
-                                    </div>
+                                  <div class="alert alert-danger" style="padding-top: 0px; position: relative">
+                                      <h2 style="margin-bottom: 5px;"><strong>Verloren:</strong> <img class="img-responsive" src="images/new-filled-red.png" style="position: absolute; width:80px; top: 0px; right: 5px"></h2>
+                                  </div>
                                 </div>
                             </header>
                             <ul class="features">
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="category">  <i class="fa fa-file-o"></i> &nbsp;Kategorie </label>
-                                    <input value="Geldbörse" placeholder="Kategorie eingeben.." list="categories" id="category" class="form-control"/>
+                                    <input placeholder="Kategorie eingeben.." list="categories" id="category" class="form-control"/>
                                     <datalist id="categories">
                                         <option value="Geldbörse">
                                         </option><option value="Handy &amp; Zubehör">
@@ -92,7 +91,7 @@
                                 </li>
                                 <li style="font-size: 20px;padding-bottom: 0.7em;">
                                     <label for="event"> <i class="fa fa-star-o"></i> &nbsp;Veranstaltung </label>
-                                    <input value="Phil Phoenix" id="event" list="events" placeholder="Veranstaltung eingeben..(optional)" class="form-control"/>
+                                    <input id="event" list="events" placeholder="Veranstaltung eingeben..(optional)" class="form-control"/>
                                     <datalist id="events">
                                         <option value="American Christmas Show">
                                         </option><option value="Österr. ‑ Ungar. Haydn Philharmonie">
@@ -106,42 +105,19 @@
                                     <input id="date" class="form-control" value="2015-12-13" type="date"/>
                                 </li>
                             </ul>
-                            <p> Beschreibe den Gegenstand ohne markante Details zu verraten und vermeide Angaben zum Geldwert.</p>
-                            <p style="font-size: 12px">Hier erfährst Du <a href="#">warum?</a></p>
-                            <div class="form-group">
-                                <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Beschreibung"></textarea>
-                            </div>
+
                             <!-- /.features -->
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Sobald sich der/die BesitzerIn meldet, senden wir Dir ein Email!</p>
-                        <div id="contact" class="form-container">
-                            <fieldset>
-                                <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
-                                    <div class="form-group">
-                                        <input name="name" id="name" type="text" value="" placeholder="Name" class="form-control" />
-                                    </div>
-                                    <div class="input-group" style="margin-bottom:20px">
-                                        <input name="email" id="email" type="text" value="" placeholder="Email" class="form-control" />
-                                        <span class="input-group-addon"><i class="fa fa-asterisk "></i></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <input name="phone" id="phone" type="text" value="" placeholder="Phone" class="form-control" />
-                                    </div>
-                                    <div class="editContent">
-                                        <div class="checkbox">
-                                            <label class="control-label">
-                                                <input type="checkbox" value="">Ich habe die
-                                                <a href="#">Nutzungsbedingungen</a> gelesen und bin einverstanden.
-                                            </label>
-                                        </div>
-                                        <p style="font-size: 12px">Selbstverständlich geben wir Deine Daten nicht an Dritte weiter und sie sind auch für niemanden einsehbar. <br>Weitere Informationen  findest Du in unserer <a href="#" d="4903">Datenschutzerklärung</a>.</p>
-                                        <a href="./dummy-save-find.html"><button class="btn btn-primary" type="button">Speichern</button></a>                                                     
-                                    </div>
-                                </form>
-                            </fieldset>
-                        </div>
+                      <p> Beschreibe den Gegenstand ohne markante Details zu verraten und vermeide Angaben zum Geldwert.</p>
+                      <p style="font-size: 12px">Hier erfährst Du <a href="#">warum?</a></p>
+                      <div class="form-group">
+                          <textarea style="resize: vertical; min-height:80px" name="description" id="description" class="form-control" rows="5" placeholder="Beschreibung"></textarea>
+                      </div>
+                      <div style="text-align: right;">
+                        <a href="./entry-saved-loss.html"><button class="btn btn-primary" type="button">Speichern</button></a>
+                      </div>
                     </div>
                     <!-- /.row -->
                 </div>
